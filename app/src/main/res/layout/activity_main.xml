@@ -30,4 +30,23 @@
         android:layout_alignTop="@+id/buttonRight"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/EditTextNumber"
+        android:ems="10"
+        android:hint="@string/enter_text"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        style="@style/edit_text_style" />
+
+    <TextView
+        android:id="@+id/TextViewSumm"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginTop="38dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/EditTextNumber"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

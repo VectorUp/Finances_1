@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Main Title</string>
+    <string name="enter_text">Введите бюджет</string>
 </resources>
