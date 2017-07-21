@@ -35,8 +35,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         // Ввод текста с выводом при нажатии Enter
-        final EditText editText = (EditText)findViewById(R.id.EditTextNumber);
-        textView = (TextView)findViewById(R.id.TextViewSumm);
+        /*final EditText editText = (EditText)findViewById(R.id.EditTextNumber);
         editText.setOnKeyListener(new View.OnKeyListener()
         {
             @Override
@@ -53,8 +52,17 @@ public class MainActivity extends AppCompatActivity {
                 }
                 return false;
             }
-        });
+        });*/
 
+        textView = (TextView)findViewById(R.id.TextViewSumm);
+        //String totalAmount;
+
+        //if(getIntent().getExtras().getString("per_day") != null)
+        //    totalAmount = getIntent().getExtras().getString("per_day");
+       // else
+         //   totalAmount = "empty";
+
+        //textView.setText(totalAmount);
     }
         //jmyujmum
         // gitignore

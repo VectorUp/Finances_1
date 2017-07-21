@@ -33,10 +33,7 @@ public class RightActivity extends AppCompatActivity{
         Intent intent = new Intent(RightActivity.this, MainActivity.class);
         intent.putExtra("per_day", perDay);
 
-        TextView textView = (TextView) findViewById(R.id.textView);
-        textView.setText(String.valueOf(perDay));
-
-        //startActivity(intent);
+        startActivity(intent);
     }
 
 
