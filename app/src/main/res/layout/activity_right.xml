@@ -11,4 +11,47 @@
     tools:context="com.example.shpp_admin.myapplication.RightActivity">
 
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:gravity="center"
+        android:maxLength="12"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/totalNumber"
+        android:hint="Введите общую сумму" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:gravity="center"
+        android:maxLength="3"
+        android:ems="10"
+        android:layout_below="@+id/totalNumber"
+        android:layout_alignRight="@+id/totalNumber"
+        android:layout_alignEnd="@+id/totalNumber"
+        android:layout_marginTop="20dp"
+        android:id="@+id/totalDays"
+        android:hint="Введите кол-во дней" />
+
+    <Button
+        android:text="Готово"
+        android:onClick="onCommitClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/totalDays"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/commitButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
 </RelativeLayout>
