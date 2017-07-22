@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Main Title</string>
     <string name="enter_text">Введите бюджет</string>
+
+    <string name="dialog_mine">Creat new mission</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_number">Введите сумму</string>
+    <string name="enter_name">Введите название</string>
+    <string name="enter_category">Введите категорию</string>
+    <string name="enter_deadline">Введите срок</string>
 </resources>
