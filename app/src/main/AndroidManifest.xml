@@ -16,7 +16,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".RightActivity" />
-        <activity android:name=".LeftActivity"></activity>
+        <activity android:name=".LeftActivity" />
+        <activity android:name=".AddNewActivity">
+        </activity>
     </application>
 
 </manifest>

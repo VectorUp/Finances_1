@@ -8,31 +8,45 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 public class RightActivity extends AppCompatActivity{
 
+    private String number;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_right);
-    }
 
+        number = getIntent().getStringExtra("class");
+    }
 
     public void onCommitClick(View view) {
         EditText total = (EditText) findViewById(R.id.totalNumber);
         EditText days = (EditText) findViewById(R.id.totalDays);
+
+
         int totalInt = Integer.parseInt(total.getText().toString());
         int daysInt = Integer.parseInt(days.getText().toString());
-        int perDay;
+
+        if (days.getText().equals(""))
+            daysInt = 0;
+        if (total.getText().equals(""))
+            totalInt = 0;
 
         if (daysInt > 0)
-            perDay = (totalInt/daysInt);
+            number = String.valueOf(totalInt/daysInt);
         else
-            perDay = 0;
+            number = "empty";
 
         Intent intent = new Intent(RightActivity.this, MainActivity.class);
-        intent.putExtra("per_day", perDay);
+        intent.putExtra("class", number);
+        startActivity(intent);
+    }
 
+    public void onClick(View view) {
+        Intent intent = new Intent(RightActivity.this, AddNewActivity.class);
         startActivity(intent);
     }
 
