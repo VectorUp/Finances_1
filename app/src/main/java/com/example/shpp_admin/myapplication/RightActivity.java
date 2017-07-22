@@ -5,11 +5,14 @@ import android.support.annotation.IntegerRes;
 import android.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
+
+import java.util.concurrent.ExecutionException;
 
 public class RightActivity extends AppCompatActivity{
 
@@ -33,6 +36,9 @@ public class RightActivity extends AppCompatActivity{
 
         int totalInt = Integer.parseInt(total.getText().toString());
         int daysInt = Integer.parseInt(days.getText().toString());
+
+        // Услвоие, которое чекает пустое поле ввода
+        // ................
 
         if (days.getText().equals(""))
             daysInt = 0;
