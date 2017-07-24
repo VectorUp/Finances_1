@@ -9,6 +9,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,6 +35,15 @@ public class RightActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_right);
+        ImageButton buttonLeft2 = (ImageButton) findViewById(R.id.buttonLeft2);
+        buttonLeft2.setOnClickListener(new View.OnClickListener() {
+
+                                           @Override
+                                           public void onClick(View v) {
+                                               Intent intent = new Intent(RightActivity.this, MainActivity.class);
+                                               startActivity(intent);
+                                           }
+                                       });
 
         number = getIntent().getStringExtra("class");
 
