@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        textView = (TextView) findViewById(R.id.TextViewSumm);
+        textView = (TextView) findViewById(R.id.EditTextNumber);
         textView.setText(getIntent().getStringExtra("class"));
     }
 }

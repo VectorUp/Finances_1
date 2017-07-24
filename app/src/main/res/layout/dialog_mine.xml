@@ -1,62 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
     android:paddingLeft="50dp"
-    android:paddingRight="50dp"
-    >
+    android:paddingRight="50dp">
 
     <LinearLayout
         android:id="@+id/layoutCharacters"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:paddingBottom="10dp"
         android:paddingLeft="25dp"
         android:paddingRight="25dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp">
+        android:paddingTop="10dp">
 
         <EditText
+            android:id="@+id/missionCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/left_field"
+            android:ems="10"
+            android:hint="@string/enter_category"
+            android:inputType="textPersonName"
             android:text=""
+            android:textStyle="italic" />
+
+        <EditText
             android:id="@+id/missionName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/enter_category"
             android:layout_marginBottom="5dp"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:text=""
-            android:id="@+id/missinCategory"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:background="@drawable/left_field"
             android:ems="10"
             android:hint="@string/enter_name"
-            android:layout_marginBottom="5dp"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:text="" />
 
         <EditText
-            android:text=""
             android:id="@+id/missionValue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/left_field"
             android:ems="10"
             android:hint="@string/enter_number"
-            android:layout_marginBottom="5dp"
-            android:inputType="number" />
+            android:inputType="number"
+            android:text="" />
 
         <EditText
-            android:text=""
             android:id="@+id/missionDeadline"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/left_field"
             android:ems="10"
             android:hint="@string/enter_deadline"
-            android:layout_marginBottom="5dp"
-            android:inputType="number" />
+            android:inputType="number"
+            android:text="" />
     </LinearLayout>
 
     <LinearLayout
@@ -69,17 +73,17 @@
             android:id="@+id/buttonCancel"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_margin="10dp"
-            android:text="@string/cancel" />
+            android:layout_weight="1"
+            android:text="Отмена" />
 
         <Button
             android:id="@+id/buttonCreate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_margin="10dp"
-            android:text="@string/create" />
+            android:layout_weight="1"
+            android:text="Добавить" />
 
     </LinearLayout>
 

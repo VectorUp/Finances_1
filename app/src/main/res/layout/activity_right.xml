@@ -1,65 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_right"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.shpp_admin.myapplication.RightActivity">
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_right"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context="com.example.shpp_admin.myapplication.RightActivity">
 
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:gravity="center"
-        android:maxLength="12"
-        android:ems="10"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:id="@+id/totalNumber"
-        android:hint="Введите общую сумму" />
+    android:id="@+id/totalNumber"
+    android:layout_width="200dp"
+    android:layout_height="70dp"
+    android:layout_marginTop="42dp"
+    android:background="@drawable/left_field"
+    android:ems="10"
+    android:gravity="center"
+    android:hint="Введите общую сумму"
+    android:inputType="number"
+    android:maxLength="12"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:gravity="center"
-        android:maxLength="3"
-        android:ems="10"
-        android:layout_below="@+id/totalNumber"
-        android:layout_alignRight="@+id/totalNumber"
-        android:layout_alignEnd="@+id/totalNumber"
-        android:layout_marginTop="20dp"
-        android:id="@+id/totalDays"
-        android:hint="Введите кол-во дней" />
+    android:id="@+id/totalDays"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/left_field"
+    android:ems="10"
+    android:gravity="center"
+    android:hint="Введите кол-во дней"
+    android:inputType="number"
+    android:maxLength="3"
+    android:layout_above="@+id/commitButton"
+    android:layout_alignLeft="@+id/totalNumber"
+    android:layout_alignStart="@+id/totalNumber"
+    android:layout_marginBottom="54dp" />
 
     <Button
-        android:text="Готово"
-        android:onClick="onCommitClick"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/totalDays"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:id="@+id/commitButton" />
+    android:id="@+id/commitButton"
+    android:layout_width="150dp"
+    android:layout_height="50dp"
+    android:onClick="onCommitClick"
+    android:text="Готово"
+    android:layout_alignBaseline="@+id/addNewButton"
+    android:layout_alignBottom="@+id/addNewButton"
+    android:layout_alignLeft="@+id/totalDays"
+    android:layout_alignStart="@+id/totalDays"
+    android:layout_marginLeft="13dp"
+    android:layout_marginStart="13dp" />
 
     <Button
-        android:text="Add New"
-        android:onClick="onClick"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/commitButton"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginTop="41dp"
-        android:id="@+id/addNewButton" />
+    android:id="@+id/addNewButton"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:background="@android:drawable/ic_input_add"
+    android:onClick="onClick"
+    android:layout_marginTop="192dp"
+    android:layout_below="@+id/totalNumber"
+    android:layout_toRightOf="@+id/totalDays"
+    android:layout_toEndOf="@+id/totalDays" />
 
+    <ImageButton
+    android:id="@+id/buttonLeft2"
+    android:layout_width="70dp"
+    android:layout_height="150dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/commitButton"
+    android:layout_marginBottom="47dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/left_direct1" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="175sp"
+        android:layout_alignParentBottom="true"
+        >
+
+    </android.support.v7.widget.RecyclerView>
 
 </RelativeLayout>

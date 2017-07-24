@@ -14,42 +14,90 @@
 
     <ImageButton
         android:id="@+id/buttonRight"
-        android:layout_width="100dp"
-        android:layout_height="120dp"
+        android:layout_width="70dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/left_direct2"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="92dp"
-        android:background="@mipmap/ic_launcher" />
+        android:layout_alignParentEnd="true" />
 
     <ImageButton
         android:id="@+id/buttonLeft"
-        android:layout_width="100dp"
-        android:layout_height="120dp"
+        android:layout_width="70dp"
+        android:layout_height="150dp"
+        android:background="@drawable/left_direct1"
         android:layout_alignTop="@+id/buttonRight"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:background="@mipmap/ic_launcher" />
-
-    <EditText
-        android:id="@+id/EditTextNumber"
-        android:ems="10"
-        android:hint="@string/enter_text"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        style="@style/edit_text_style"
-        android:background="@drawable/input_panel" />
+        android:layout_alignParentLeft="true" />
 
     <TextView
-        android:id="@+id/TextViewSumm"
-        android:textSize="22sp"
+        android:id="@+id/EditTextNumber"
+        style="@style/edit_text_style"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:background="@drawable/left_field"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:id="@+id/editTextInput"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:background="@drawable/left_field"
+        android:ems="10"
+        android:layout_alignTop="@+id/spinnerCategories"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/spinnerCategories"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:background="@drawable/left_field"
+        android:layout_marginTop="57dp"
+        android:layout_below="@+id/textDays"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textTotal"
+        style="@style/edit_text_style"
+        android:layout_width="110dp"
+        android:layout_height="52dp"
+        android:background="@drawable/left_field"
+        android:ems="10"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignTop="@+id/EditTextNumber"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textDays"
+        style="@style/edit_text_style"
+        android:layout_width="110dp"
+        android:layout_height="52dp"
+        android:layout_alignLeft="@+id/textTotal"
+        android:layout_alignStart="@+id/textTotal"
+        android:layout_below="@+id/textTotal"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/left_field"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/history"
+        android:layout_width="210dp"
+        android:layout_height="280dp"
+        android:background="@drawable/left_mission"
+        android:text="History"
+        android:textSize="32sp"
         android:gravity="center"
-        android:layout_marginTop="38dp"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_below="@+id/EditTextNumber"
-        android:layout_centerHorizontal="true"
-        android:text="Basic Information"
-        android:background="@drawable/input_panel" />
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
