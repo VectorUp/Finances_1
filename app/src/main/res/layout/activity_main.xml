@@ -31,7 +31,7 @@
         android:layout_alignParentLeft="true" />
 
     <TextView
-        android:id="@+id/EditTextNumber"
+        android:id="@+id/TextNumber"
         style="@style/edit_text_style"
         android:layout_width="130dp"
         android:layout_height="50dp"
