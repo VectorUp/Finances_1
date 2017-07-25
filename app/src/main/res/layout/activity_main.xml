@@ -6,8 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.shpp_admin.myapplication.MainActivity"
     android:background="@drawable/background">
@@ -15,20 +13,21 @@
     <ImageButton
         android:id="@+id/buttonRight"
         android:layout_width="70dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="46dp"
-        android:background="@drawable/left_direct2"
+        android:layout_height="170dp"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginBottom="41dp"
+        android:background="@drawable/left_direct2" />
 
     <ImageButton
         android:id="@+id/buttonLeft"
         android:layout_width="70dp"
-        android:layout_height="150dp"
+        android:layout_height="170dp"
         android:background="@drawable/left_direct1"
         android:layout_alignTop="@+id/buttonRight"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/TextNumber"
@@ -37,10 +36,10 @@
         android:layout_height="50dp"
         android:background="@drawable/left_field"
         android:ems="10"
+        android:layout_marginTop="16dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp" />
+        android:layout_alignLeft="@+id/editTextInput"
+        android:layout_alignStart="@+id/editTextInput" />
 
     <EditText
         android:id="@+id/editTextInput"
@@ -48,18 +47,21 @@
         android:layout_height="40dp"
         android:background="@drawable/left_field"
         android:ems="10"
+        android:layout_alignTop="@+id/spinnerCategories"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/spinnerCategories" />
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
 
     <Spinner
         android:id="@+id/spinnerCategories"
         android:layout_width="170dp"
         android:layout_height="40dp"
         android:background="@drawable/left_field"
-        android:layout_above="@+id/history"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/textDays"
+        android:layout_alignRight="@+id/textDays"
+        android:layout_alignEnd="@+id/textDays" />
 
     <TextView
         android:id="@+id/textTotal"
@@ -68,35 +70,33 @@
         android:layout_height="52dp"
         android:background="@drawable/left_field"
         android:ems="10"
-        android:layout_marginRight="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_alignTop="@+id/EditTextNumber"
+        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
 
     <TextView
         android:id="@+id/textDays"
         style="@style/edit_text_style"
         android:layout_width="110dp"
         android:layout_height="52dp"
-        android:layout_alignLeft="@+id/textTotal"
-        android:layout_alignStart="@+id/textTotal"
-        android:layout_below="@+id/textTotal"
-        android:layout_marginTop="11dp"
-        android:layout_alignParentRight="true"
         android:background="@drawable/left_field"
-        android:ems="10" />
+        android:ems="10"
+        android:layout_below="@+id/TextNumber"
+        android:layout_alignRight="@+id/textTotal"
+        android:layout_alignEnd="@+id/textTotal" />
 
     <TextView
         android:id="@+id/history"
-        android:layout_width="210dp"
+        android:layout_width="200dp"
         android:layout_height="280dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/left_mission"
-        android:text="History"
-        android:textSize="32sp"
         android:gravity="center"
 
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:text="History"
+        android:textSize="32sp" />
 
 </RelativeLayout>

@@ -63,7 +63,7 @@ public class DialogActivity extends DialogFragment implements OnClickListener {
                 String value = editValue.getText().toString();
                 String deadline = editDeadline.getText().toString();
 
-                MissionStrings characters = new MissionStrings(category, name, value, deadline);
+                MissionStrings characters = new MissionStrings(category, name,value, deadline);
 
                 Gson gson = new GsonBuilder().create();
 
